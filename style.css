@@ -8,3 +8,27 @@ body {
   width: 960px;
   margin: 20px auto 20px auto;
 }
+.awesome {
+    color: #4f2582;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: left;
+}
+h1 {
+   background-color: #00aeef;
+   background-image: url(https://images.designtrends.com/wp-content/uploads/2015/12/19063815/Brushed-Steel-Texture.png);
+   color: white;
+   font-size: 48px;
+}
+
+h4 {
+  color: blue;
+  font-size: 12px;
+  text-align: center;
+}
+
+img {
+  width: 50%;
+}
