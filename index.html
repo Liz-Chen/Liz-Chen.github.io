@@ -1,56 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Walter White, Chemist</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liz's Chicago Bucket List</title>
+  <!-- Bootstrap and jQuery -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/ceef03d93e.js"></script>
+  <!-- My own styles -->
+  <link href="https://fonts.googleapis.com/css?family=Abel|Cormorant+Garamond|Quattrocento+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="wrapper">
-    <h1>Walter White</h1>
-    <p>
-      <img src="http://www.pawderosa.com/images/puppies.jpg">
-    </p>
-    <h2>Chemist</h2>
-    <h3>Chicago, IL</h3>
-    <div>
-      <h4>Connect With Me</h4>
-      <ul>
-        <li><a href="mailto:walter@walterwhite.com">Email</a></li>
-        <li><a href="http://twitter.com/walterwhite">Twitter</a></li>
-        <li><a href="https://www.facebook.com/">Facebook</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Summary</h4>
-      <p>
-        Walter studied at the California Institute of Technology, where he proved himself a brilliant chemist with a specialty in X-ray crystallography. In 1985, Walt's groundbreaking research regarding photon radiography contributed to a project that was awarded the Nobel Prize in Chemistry, awarded jointly to Herbert A. Hauptman and Jerome Karle for outstanding achievements in the development of direct methods for the determination of crystal structures. Following his education, Walter went on to co-found Gray Matter Technologies with his friend, Elliott Schwartz. He now lives in Albuquerque with his family and owns A1A Car Wash.
-      </p>
-    </div>
-    <div>
-      <h4>Experience</h4>
-      <div>
-        <h5>Co-Owner, A1A Car Wash</h5>
-        <p>You've Tried the Rest – Now Try the Best™. And don't forget to Have an A1 Day™!</p>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
-      <div>
-        <h5>Chemistry Teacher, J.P. Wynne High School</h5>
-        <p>J.P. Wynne High School is a public high school located in Albuquerque, New Mexico. Walter was well-liked by his many students.</p>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html"><i class="fa fa-home"></i><span class="sr-only">(current)</span></a></li>
+          <li><a href="food.html"><i class="fa fa-cutlery"></i> Food</a></li>
+          <li><a href="drinks.html"><i class="fa fa-glass"></i> Drinks</a></li>
+          <li><a href="activity.html"><i class="fa fa-play"></i> Activities</a></li>
+          <li><a href="https://goo.gl/NoFqcF"><i class="fa fa-map-marker"></i> Map</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="well well-sm">
+    <h1>Hi there!</h1>
+    <h2>During my two years of school at Kellogg, here are some of my favorite places I've been to and some places I still want to check out during my last year in Chicago!</h2>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="http://www.bokachicago.com/assets/images/boka-tour-3.jpg">
+        <div class="caption">
+          <h3 id="food">For the Foodies</h3>
+          <p>I have been so impressed with the food scene in Chicago. Here are some places to check out with fellow foodie friends.</p>
+          <p><a href="food.html" class="btn btn-custom" role="button">List of Restaurants</a></p>
+        </div>
       </div>
     </div>
-    <div>
-      <h4 class="awesome">Skills</h4>
-      <ul>
-        <li>Chemistry</li>
-        <li>Teaching</li>
-      </ul>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="http://media.chicagomag.com//images/cache/cache_0/cache_8/cache_9/C201602-Best-Bars-Band-of-Bohemia-facf8980.jpeg?ver=1454515243&aspectratio=1.5">
+        <div class="caption">
+          <h3 id="drink">For the Drink Aficionados</h3>
+          <p>Chicago has some of the best bars and breweries in the country. Here are some places for a fun night out with friends!</p>
+          <p><a href="drinks.html" class="btn btn-custom" role="button">List of Bars</a></p>
+        </div>
+      </div>
     </div>
-    <div>
-      <h4 class="awesome">Hobbies</h4>
-      <ul>
-        <li>Cooking</li>
-      </ul>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="http://therealchicago.com/wp-content/uploads/2011/03/Chicago-Botanical-Garden-Malott-Japanese-Garden.jpg">
+        <div class="caption">
+          <h3 id="activity">For the Explorers</h3>
+          <p>Parks, art, culture, and entertainment. I am excited to explore more of what Chicago has to offer!</p>
+          <p><a href="activity.html" class="btn btn-custom" role="button">Where to Go</a></p>
+        </div>
+      </div>
     </div>
   </div>
 </body>
